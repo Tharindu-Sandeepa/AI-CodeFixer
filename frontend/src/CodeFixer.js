@@ -75,8 +75,8 @@ const CodeFixer = () => {
         width: '100%',
         maxWidth: '800px',
         marginTop: '20px',
-        position: 'relative', // Required for centering the loader
-        minHeight: '400px', // Ensures that the loader is centered properly even with less content
+        position: 'relative', 
+        minHeight: '400px', 
       }}
     >
       {!fixedCode && (
@@ -88,7 +88,7 @@ const CodeFixer = () => {
             textAlign: 'center',
             color: '#fff',
             textShadow: '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.6)',
-            background: 'linear-gradient(90deg, #e43efe, #735dde, #6e25ff)', // Darker gradient colors
+            background: 'linear-gradient(90deg, #e43efe, #735dde, #6e25ff)', 
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             letterSpacing: '2px',
@@ -184,8 +184,8 @@ Get started by pasting your code below, and let AI enhance your coding experienc
             position: 'absolute',
             top: '50%',
             left: '50%',
-            transform: 'translate(-50%, -50%)', // Centering the loader
-            zIndex: 10, // Ensures the loader is on top
+            transform: 'translate(-50%, -50%)', 
+            zIndex: 10, 
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -197,7 +197,7 @@ Get started by pasting your code below, and let AI enhance your coding experienc
             thickness={3.5}
             sx={{
               color: '#6e25ff',
-              animation: 'rotate 2s linear infinite', // Smooth spinning effect
+              animation: 'rotate 2s linear infinite', 
             }}
           />
           <Typography
@@ -241,7 +241,7 @@ Get started by pasting your code below, and let AI enhance your coding experienc
             <Box sx={{ position: 'absolute', top: 10, right: 10 }}>
               <CopyToClipboard text={fixedCode} onCopy={handleCopy}>
                 <IconButton aria-label="copy" sx={{ color: '#fff' }}>
-                  {copied ? <CheckCircleIcon /> : <ContentCopyIcon />} {/* Conditional rendering */}
+                  {copied ? <CheckCircleIcon /> : <ContentCopyIcon />} 
                 </IconButton>
               </CopyToClipboard>
             </Box>

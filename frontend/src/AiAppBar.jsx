@@ -5,15 +5,15 @@ import { styled } from '@mui/system';
 // Styled Typography for glowing effect
 const GlowingTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 'bold',
-  fontSize: '1.8rem',  // Increased the font size
+  fontSize: '1.8rem', 
   color: '#fff',
   textShadow: '0 0 8px rgba(255, 255, 255, 0.3), 0 0 16px rgba(255, 255, 255, 0.6)',
   letterSpacing: '2px',
-  marginLeft: theme.spacing(2), // Add some space from the left
+  marginLeft: theme.spacing(2), 
 }));
 
 const AiAppBar = () => {
-  // State to manage active tab
+ 
   const [activeTab, setActiveTab] = useState(0);
 
   // Handle tab change
@@ -25,25 +25,24 @@ const AiAppBar = () => {
     <AppBar
       position="fixed"
       sx={{
-        background: 'linear-gradient(90deg, #e43efe, #735dde, #6e25ff)', // Keep the gradient
-        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.2)', // Soft shadow
+        background: 'linear-gradient(90deg, #e43efe, #735dde, #6e25ff)', 
+        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.2)', 
       }}
     >
       <Toolbar
         sx={{
           display: 'flex',
-          justifyContent: 'space-between', // Space between logo and tabs
+          justifyContent: 'space-between', 
           alignItems: 'center',
         }}
-      >
-        {/* App Name aligned to the left */}
+      >  
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-start' }}>
           <GlowingTypography variant="h6">
             AI-Buddy 2.0
           </GlowingTypography>
         </Box>
 
-        {/* Navigation Tabs */}
+       
         <Box>
           <Tabs
             value={activeTab}
@@ -51,8 +50,8 @@ const AiAppBar = () => {
             textColor="inherit"
             indicatorColor="secondary"
             sx={{
-              marginRight: '10px',  // Ensure some space from the edge
-              '& .MuiTab-root': { // Improve tab UI
+              marginRight: '10px', 
+              '& .MuiTab-root': { 
                 minWidth: 100,
                 fontWeight: 'bold',
                 fontSize: '1rem',
