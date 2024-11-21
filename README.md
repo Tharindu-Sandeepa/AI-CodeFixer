@@ -4,9 +4,7 @@
 ## Overview
 
 The **AI Powered Code Fixer** is a web-based application that allows users to paste or input any programming code and get it analyzed for errors and improvements. The app uses AI to detect errors in the code, fixes them, and provides a revised version. It's a powerful tool for developers looking to enhance their code quality quickly and efficiently.
-
-<img src="/main.png" width="200" style="margin-right: 50px;" />
-    <img src="assets/img.png" width="200" />
+    <img src="assets/img.png" width="auto" />
 
 ## Features
 
